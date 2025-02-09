@@ -4,9 +4,11 @@
     ViewData["Title"] = "Hitung Angsuran";
 }
 
-<h2>Hitung Angsuran</h2>
+<h2 class="text-center"> <strong>HITUNG ANGSURAN</strong></h2>
 
-<form asp-action="Hitung" method="post">
+<hr>
+
+<form asp-action="Hitung" method="post" class="mt-3">
     <div class="form-group">
         <label for="KontrakNo">Nomor Kontrak</label>
         <input type="text" name="KontrakNo" class="form-control" required />
@@ -17,15 +19,25 @@
         <input type="text" name="Client_Name" class="form-control" required />
     </div>
 
-    <div class="form-group">
+    @* <div class="form-group">
         <label for="OTR">Harga OTR</label>
         <input type="number" name="OTR" class="form-control" required />
+    </div> *@
+
+    <div class="form-group">
+        <label for="OTR">Harga OTR</label>
+        <input type="number" name="OTR" id="OTR" class="form-control" required oninput="hitungDP()" />
     </div>
 
     <div class="form-group">
-        <label for="DP">Down Payment (DP)</label>
-        <input type="number" name="DP" class="form-control" required />
+        <label for="DP">Down Payment (DP) 20%</label>
+        <input type="number" name="DP" id="DP" class="form-control" readonly />
     </div>
+
+    @* <div class="form-group">
+        <label for="DP">Down Payment (DP) 20%</label>
+        <input type="number" name="DP" class="form-control" required />
+    </div> *@
 
     <div class="form-group">
         <label for="JangkaWaktu">Jangka Waktu</label>
@@ -40,9 +52,21 @@
     </div>
 
     <div class="form-group">
-        <label for="StartDate">Tanggal Jatuh Tempo Pertama</label>
+        <label for="StartDate">Tanggal Jatuh Tempo</label>
         <input type="date" name="StartDate" class="form-control" required />
     </div>
 
     <button type="submit" class="btn btn-primary">Hitung</button>
 </form>
+
+<script>
+    function hitungDP() {
+        var otr = document.getElementById("OTR").value;
+        var dp = 0.2 * parseFloat(otr);
+        if (!isNaN(dp)) {
+            document.getElementById("DP").value = dp;
+        } else {
+            document.getElementById("DP").value = "";
+        }
+    }
+</script>
