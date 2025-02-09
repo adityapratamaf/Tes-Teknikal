@@ -1,0 +1,60 @@
+@model List<AngsuranMVC.Models.JadwalAngsuranModel>
+
+@{
+    ViewData["Title"] = "Skema Angsuran";
+}
+
+<h2 class="text-center"> <strong>SKEMA ANGSURAN</strong></h2>
+
+<hr>
+
+<h5> <strong>A. Ringkasan</strong> </h5>
+
+@if (Model.Any())
+{
+    var pokokHutang = Model.First().OTR - Model.First().DP;
+    var totalBunga = pokokHutang * Model.First().Bunga;
+    var totalHutang = pokokHutang + totalBunga;
+
+    <div class="row mt-3 mb-3">
+        <div class="col-md-6">
+            <h6>Nama Klien : @Model.First().Client_Name</h6>
+            <h6>Nomor Kontrak : @Model.First().KontrakNo</h6>
+            <h6>Harga OTR : @Model.First().OTR.ToString("N0")</h6>
+            <h6>Jumlah DP : @Model.First().DP.ToString("N0")</h6>
+        </div>
+
+        <div class="col-md-6">
+            <h6>Pokok Hutang : @pokokHutang.ToString("N0")</h6>
+            <h6>Bunga : @((Model.First().Bunga * 100).ToString("F1"))%</h6>
+            <h6>Total Hutang : @totalHutang.ToString("N0")</h6>
+            <h6>Jangka Waktu : @(Model.First().JangkaWaktu) Bulan</h6>
+        </div>
+    </div>
+}
+
+<h5> <strong>B. Jadwal</strong> </h5>
+
+<table class="table table-bordered mt-3">
+    <thead>
+        <tr>
+            <th>Kontrak No</th>
+            <th>Angsuran Ke</th>
+            <th>Angsuran / Bulan</th>
+            <th>Tanggal Jatuh Tempo</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.KontrakNo</td>
+                <td>@item.AngsuranKe</td>
+                <td>@item.AngsuranPerBulan.ToString("N0")</td>
+                <td>@item.TanggalJatuhTempo.ToString("dd-MM-yyyy")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Index" class="btn btn-primary">Kembali</a>
