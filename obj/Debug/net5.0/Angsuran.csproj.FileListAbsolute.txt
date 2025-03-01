@@ -5,7 +5,6 @@ C:\Users\saput\OneDrive\Desktop\Angsuran\Angsuran\bin\Debug\net5.0\Angsuran.deps
 C:\Users\saput\OneDrive\Desktop\Angsuran\Angsuran\bin\Debug\net5.0\Angsuran.runtimeconfig.json
 C:\Users\saput\OneDrive\Desktop\Angsuran\Angsuran\bin\Debug\net5.0\Angsuran.runtimeconfig.dev.json
 C:\Users\saput\OneDrive\Desktop\Angsuran\Angsuran\bin\Debug\net5.0\Angsuran.dll
-C:\Users\saput\OneDrive\Desktop\Angsuran\Angsuran\bin\Debug\net5.0\ref\Angsuran.dll
 C:\Users\saput\OneDrive\Desktop\Angsuran\Angsuran\bin\Debug\net5.0\Angsuran.pdb
 C:\Users\saput\OneDrive\Desktop\Angsuran\Angsuran\bin\Debug\net5.0\Angsuran.Views.dll
 C:\Users\saput\OneDrive\Desktop\Angsuran\Angsuran\bin\Debug\net5.0\Angsuran.Views.pdb
@@ -18,7 +17,6 @@ C:\Users\saput\OneDrive\Desktop\Angsuran\Angsuran\obj\Debug\net5.0\Angsuran.MvcA
 C:\Users\saput\OneDrive\Desktop\Angsuran\Angsuran\obj\Debug\net5.0\Angsuran.RazorAssemblyInfo.cache
 C:\Users\saput\OneDrive\Desktop\Angsuran\Angsuran\obj\Debug\net5.0\Angsuran.RazorAssemblyInfo.cs
 C:\Users\saput\OneDrive\Desktop\Angsuran\Angsuran\obj\Debug\net5.0\staticwebassets\Angsuran.StaticWebAssets.Manifest.cache
-C:\Users\saput\OneDrive\Desktop\Angsuran\Angsuran\obj\Debug\net5.0\staticwebassets\Angsuran.StaticWebAssets.xml
 C:\Users\saput\OneDrive\Desktop\Angsuran\Angsuran\obj\Debug\net5.0\scopedcss\bundle\Angsuran.styles.css
 C:\Users\saput\OneDrive\Desktop\Angsuran\Angsuran\obj\Debug\net5.0\Angsuran.TagHelpers.input.cache
 C:\Users\saput\OneDrive\Desktop\Angsuran\Angsuran\obj\Debug\net5.0\Angsuran.TagHelpers.output.cache
@@ -40,3 +38,5 @@ C:\Users\saput\OneDrive\Desktop\Angsuran\Angsuran\obj\Debug\net5.0\Angsuran.genr
 C:\Users\saput\OneDrive\Desktop\Angsuran\Angsuran\obj\Debug\net5.0\Angsuran.csproj.CopyComplete
 C:\Users\saput\OneDrive\Desktop\Angsuran\Angsuran\obj\Debug\net5.0\Razor\Views\Angsuran\Index.cshtml.g.cs
 C:\Users\saput\OneDrive\Desktop\Angsuran\Angsuran\obj\Debug\net5.0\Razor\Views\Angsuran\Hasil.cshtml.g.cs
+C:\Users\saput\OneDrive\Desktop\Angsuran\Angsuran\bin\Debug\net5.0\Angsuran.StaticWebAssets.xml
+C:\Users\saput\OneDrive\Desktop\Angsuran\Angsuran\obj\Debug\net5.0\refint\Angsuran.dll
